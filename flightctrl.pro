@@ -1,4 +1,4 @@
-update=10.12.2017 21:46:48
+update=Mon 11 Dec 2017 01:44:26 PM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -70,4 +70,3 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=switches
-LibName32=switch-enc
