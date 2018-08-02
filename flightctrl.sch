@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:flightctrl-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:switches
+EESchema Schematic File Version 4
 LIBS:flightctrl-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L +5V #PWR01
+L power1:+5V #PWR01
 U 1 1 56D07CAA
 P 4800 2250
 F 0 "#PWR01" H 4800 2100 50  0001 C CNN
@@ -57,7 +26,7 @@ F 3 "" H 4800 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L power1:GND #PWR02
 U 1 1 56D07CC0
 P 5750 5050
 F 0 "#PWR02" H 5750 4800 50  0001 C CNN
@@ -68,51 +37,51 @@ F 3 "" H 5750 5050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L flightctrl-rescue:R R4
 U 1 1 56D07CD6
 P 4600 2700
 F 0 "R4" V 4680 2700 50  0000 C CNN
 F 1 "56k" V 4600 2700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4530 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4530 2700 50  0001 C CNN
 F 3 "" H 4600 2700 50  0000 C CNN
 	1    4600 2700
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C1
+L flightctrl-rescue:CP C1
 U 1 1 56D07D43
 P 4200 2700
 F 0 "C1" H 4225 2800 50  0000 L CNN
 F 1 "10µ" H 4225 2600 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.00mm" H 4238 2550 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4238 2550 50  0001 C CNN
 F 3 "" H 4200 2700 50  0000 C CNN
 	1    4200 2700
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L flightctrl-rescue:C C3
 U 1 1 56D07D78
 P 5750 3400
 F 0 "C3" H 5775 3500 50  0000 L CNN
 F 1 "100n" H 5775 3300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5788 3250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5788 3250 50  0001 C CNN
 F 3 "" H 5750 3400 50  0000 C CNN
 	1    5750 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L flightctrl-rescue:C C2
 U 1 1 56D07DC1
 P 5300 3400
 F 0 "C2" H 5325 3500 50  0000 L CNN
 F 1 "100n" H 5325 3300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5338 3250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5338 3250 50  0001 C CNN
 F 3 "" H 5300 3400 50  0000 C CNN
 	1    5300 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power1:GND #PWR03
 U 1 1 56D08A3A
 P 4400 3250
 F 0 "#PWR03" H 4400 3000 50  0001 C CNN
@@ -123,18 +92,18 @@ F 3 "" H 4400 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X03 P1
+L flightctrl-rescue:CONN_02X03 P1
 U 1 1 56D60ADC
 P 9600 3050
 F 0 "P1" H 9600 3250 50  0000 C CNN
 F 1 "CONN_02X03" H 9600 2850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 9600 1850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9600 1850 50  0001 C CNN
 F 3 "" H 9600 1850 50  0000 C CNN
 	1    9600 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR04
+L power1:+5V #PWR04
 U 1 1 56FE0BD4
 P 9950 2750
 F 0 "#PWR04" H 9950 2600 50  0001 C CNN
@@ -145,7 +114,7 @@ F 3 "" H 9950 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power1:GND #PWR05
 U 1 1 56FE1B0D
 P 9950 3200
 F 0 "#PWR05" H 9950 2950 50  0001 C CNN
@@ -156,40 +125,40 @@ F 3 "" H 9950 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L flightctrl-rescue:R R1
 U 1 1 570030D3
 P 1350 6650
 F 0 "R1" V 1400 6500 50  0000 C CNN
 F 1 "68" V 1350 6650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 1280 6650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1280 6650 50  0001 C CNN
 F 3 "" H 1350 6650 50  0000 C CNN
 	1    1350 6650
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L flightctrl-rescue:R R2
 U 1 1 57003455
 P 1350 6750
 F 0 "R2" V 1400 6600 50  0000 C CNN
 F 1 "68" V 1350 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 1280 6750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1280 6750 50  0001 C CNN
 F 3 "" H 1350 6750 50  0000 C CNN
 	1    1350 6750
 	0    1    1    0   
 $EndComp
 $Comp
-L R R3
+L flightctrl-rescue:R R3
 U 1 1 5700351B
 P 1750 6350
 F 0 "R3" V 1800 6200 50  0000 C CNN
 F 1 "1.5k" V 1750 6350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 1680 6350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1680 6350 50  0001 C CNN
 F 3 "" H 1750 6350 50  0000 C CNN
 	1    1750 6350
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR06
+L power1:GND #PWR06
 U 1 1 57004039
 P 1600 7350
 F 0 "#PWR06" H 1600 7100 50  0001 C CNN
@@ -200,40 +169,40 @@ F 3 "" H 1600 7350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal_Small Y1
+L flightctrl-rescue:Crystal_Small Y1
 U 1 1 5700A3A2
 P 8550 3250
 F 0 "Y1" V 8600 3350 50  0000 C CNN
 F 1 "12MHz" V 8400 3250 50  0000 C CNN
-F 2 "Crystals:Crystal_SMD_HC49-SD" H 8550 3250 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 8550 3250 50  0001 C CNN
 F 3 "" H 8550 3250 50  0000 C CNN
 	1    8550 3250
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C5
+L flightctrl-rescue:C_Small C5
 U 1 1 5700A497
 P 8750 3350
 F 0 "C5" V 8800 3400 50  0000 L CNN
 F 1 "27p" V 8650 3300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 8750 3350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8750 3350 50  0001 C CNN
 F 3 "" H 8750 3350 50  0000 C CNN
 	1    8750 3350
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C4
+L flightctrl-rescue:C_Small C4
 U 1 1 5700A528
 P 8750 3150
 F 0 "C4" V 8800 3200 50  0000 L CNN
 F 1 "27p" V 8650 3100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 8750 3150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8750 3150 50  0001 C CNN
 F 3 "" H 8750 3150 50  0000 C CNN
 	1    8750 3150
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR07
+L power1:GND #PWR07
 U 1 1 5700A949
 P 9100 3500
 F 0 "#PWR07" H 9100 3250 50  0001 C CNN
@@ -251,13 +220,13 @@ Text GLabel 7900 4350 2    60   Input ~ 0
 USB_DM
 Text GLabel 7900 4450 2    60   Input ~ 0
 USB_DP
-Text GLabel 7900 4850 2    60   Input ~ 0
-SW8_A
 Text GLabel 7900 4750 2    60   Input ~ 0
+SW8_A
+Text GLabel 7900 4850 2    60   Input ~ 0
 SW8_B
-Text GLabel 7900 2650 2    60   Input ~ 0
-SW7_A
 Text GLabel 7900 2550 2    60   Input ~ 0
+SW7_A
+Text GLabel 7900 2650 2    60   Input ~ 0
 SW7_B
 Text GLabel 7900 3400 2    60   Input ~ 0
 SW5
@@ -272,18 +241,18 @@ SW1
 Text GLabel 7900 3700 2    60   Input ~ 0
 SW3
 $Comp
-L ATMEGA328P-AU U1
+L flightctrl-rescue:ATMEGA328P-AU U1
 U 1 1 5A2DAD9A
 P 6900 3650
 F 0 "U1" H 6150 4900 50  0000 L BNN
 F 1 "ATMEGA328P-AU" H 7300 2250 50  0000 L BNN
-F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 6900 3650 50  0001 C CIN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 6900 3650 50  0001 C CIN
 F 3 "" H 6900 3650 50  0001 C CNN
 	1    6900 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L USB_OTG J1
+L flightctrl-rescue:USB_OTG J1
 U 1 1 5A2DEB92
 P 2300 6650
 F 0 "J1" H 2100 7100 50  0000 L CNN
@@ -294,23 +263,23 @@ F 3 "" H 2450 6600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_Zener D1
+L flightctrl-rescue:D_Zener D1
 U 1 1 5A2E033D
 P 1600 7050
 F 0 "D1" H 1600 7150 50  0000 C CNN
 F 1 "D_Zener" H 1600 6950 50  0000 C CNN
-F 2 "Diodes_SMD:D_MiniMELF" H 1600 7050 50  0001 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1600 7050 50  0001 C CNN
 F 3 "" H 1600 7050 50  0001 C CNN
 	1    1600 7050
 	0    1    1    0   
 $EndComp
 $Comp
-L D_Zener D2
+L flightctrl-rescue:D_Zener D2
 U 1 1 5A2E040E
 P 1750 7050
 F 0 "D2" H 1750 7150 50  0000 C CNN
 F 1 "D_Zener" H 1750 6950 50  0000 C CNN
-F 2 "Diodes_SMD:D_MiniMELF" H 1750 7050 50  0001 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 1750 7050 50  0001 C CNN
 F 3 "" H 1750 7050 50  0001 C CNN
 	1    1750 7050
 	0    1    1    0   
@@ -338,18 +307,18 @@ F0 "Output" 60
 F1 "output.sch" 60
 $EndSheet
 Wire Wire Line
-	6000 4650 6000 4850
+	6000 4650 6000 4750
 Connection ~ 6000 4750
 Wire Wire Line
 	4800 2550 4800 2250
 Wire Wire Line
-	4200 2550 6000 2550
+	4200 2550 4600 2550
 Wire Wire Line
-	6000 2550 6000 2850
+	6000 2550 6000 2650
 Connection ~ 4800 2550
 Connection ~ 4600 2550
 Wire Wire Line
-	4200 2850 4600 2850
+	4200 2850 4400 2850
 Connection ~ 6000 2650
 Wire Wire Line
 	4400 2850 4400 3250
@@ -375,26 +344,26 @@ Wire Wire Line
 Wire Wire Line
 	9950 3150 9950 3200
 Wire Wire Line
-	7900 4000 9250 4000
+	7900 4000 8750 4000
 Wire Wire Line
-	1500 6650 2000 6650
+	1500 6650 1600 6650
 Wire Wire Line
-	1500 6750 2000 6750
+	1500 6750 1750 6750
 Wire Wire Line
-	1600 7200 1600 7350
+	1600 7200 1600 7300
 Wire Wire Line
 	1750 7300 1750 7200
 Connection ~ 1600 7300
 Wire Wire Line
-	1850 6100 1850 6450
+	1850 6100 1850 6200
 Wire Wire Line
 	1850 6200 1750 6200
 Wire Wire Line
-	7900 3150 8650 3150
+	7900 3150 8550 3150
 Wire Wire Line
 	8850 3150 9100 3150
 Wire Wire Line
-	9100 3150 9100 3500
+	9100 3150 9100 3350
 Wire Wire Line
 	9100 3350 8850 3350
 Connection ~ 9100 3350
@@ -408,13 +377,13 @@ Connection ~ 1850 6200
 Wire Wire Line
 	1850 6450 2000 6450
 Wire Wire Line
-	1750 6500 1750 6900
+	1750 6500 1750 6750
 Connection ~ 1750 6750
 Wire Wire Line
 	1600 6900 1600 6650
 Connection ~ 1600 6650
 Wire Wire Line
-	1600 7300 2300 7300
+	1600 7300 1750 7300
 Wire Wire Line
 	2300 7300 2300 7050
 Connection ~ 1750 7300
@@ -431,7 +400,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 3250 8400 3350
 Wire Wire Line
-	8400 3350 8650 3350
+	8400 3350 8550 3350
 Wire Wire Line
 	9250 4000 9250 3150
 Wire Wire Line
@@ -443,7 +412,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 2500 10100 3050
 Wire Wire Line
-	5750 3550 5750 5050
+	5750 3550 5750 3900
 Wire Wire Line
 	5750 4750 6000 4750
 Connection ~ 5750 4750
@@ -456,18 +425,18 @@ OUT5
 Text GLabel 7900 4250 2    60   Input ~ 0
 OUT6
 $Comp
-L R R31
+L flightctrl-rescue:R R31
 U 1 1 5AA1B4A6
 P 8750 3800
 F 0 "R31" V 8830 3800 50  0000 C CNN
 F 1 "10k" V 8750 3800 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8680 3800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8680 3800 50  0001 C CNN
 F 3 "" H 8750 3800 50  0000 C CNN
 	1    8750 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR08
+L power1:+5V #PWR08
 U 1 1 5AA1B532
 P 8750 3650
 F 0 "#PWR08" H 8750 3500 50  0001 C CNN
@@ -487,35 +456,35 @@ Wire Wire Line
 	6000 4000 5750 4000
 Connection ~ 5750 4000
 $Comp
-L Q_PMOS_SGD Q6
+L flightctrl-rescue:Q_PMOS_SGD Q6
 U 1 1 5AA53C3F
 P 4250 6350
 F 0 "Q6" H 4450 6400 50  0000 L CNN
 F 1 "Q_PMOS_SGD" H 4450 6300 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Rugged" H 4450 6450 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 4450 6450 50  0001 C CNN
 F 3 "" H 4250 6350 50  0001 C CNN
 	1    4250 6350
 	0    -1   1    0   
 $EndComp
 $Comp
-L R R26
+L flightctrl-rescue:R R26
 U 1 1 5AA53FAC
 P 3600 6800
 F 0 "R26" V 3680 6800 50  0000 C CNN
 F 1 "10k" V 3600 6800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 3530 6800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3530 6800 50  0001 C CNN
 F 3 "" H 3600 6800 50  0001 C CNN
 	1    3600 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 4950 4250 6150
+	4250 4950 4250 6050
 Wire Wire Line
-	3600 6050 4450 6050
+	3600 6050 4250 6050
 Wire Wire Line
 	3600 6050 3600 6650
 $Comp
-L GND #PWR09
+L power1:GND #PWR09
 U 1 1 5AA54067
 P 3600 7200
 F 0 "#PWR09" H 3600 6950 50  0001 C CNN
@@ -534,7 +503,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 6450 4050 6450
 $Comp
-L +5V #PWR010
+L power1:+5V #PWR010
 U 1 1 5AA54616
 P 5050 5950
 F 0 "#PWR010" H 5050 5800 50  0001 C CNN
@@ -547,48 +516,48 @@ $EndComp
 Wire Wire Line
 	5050 6450 4450 6450
 $Comp
-L LM2931AZ-5.0 U2
+L flightctrl-rescue:LM2931AZ-5.0 U2
 U 1 1 5AA5487B
 P 3400 5000
 F 0 "U2" H 3400 5250 50  0000 C CNN
 F 1 "LM2931AZ-5.0" H 3400 5200 50  0000 C CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Rugged" H 3400 5100 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 3400 5100 50  0001 C CIN
 F 3 "" H 3400 5000 50  0001 C CNN
 	1    3400 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C10
+L flightctrl-rescue:C C10
 U 1 1 5AA54B90
 P 2900 5250
 F 0 "C10" H 2925 5350 50  0000 L CNN
 F 1 "0.1u" H 2925 5150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2938 5100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2938 5100 50  0001 C CNN
 F 3 "" H 2900 5250 50  0001 C CNN
 	1    2900 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C11
+L flightctrl-rescue:CP C11
 U 1 1 5AA54C0D
 P 3950 5250
 F 0 "C11" H 3975 5350 50  0000 L CNN
 F 1 "100u" H 3975 5150 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D4.0mm_P2.00mm" H 3988 5100 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 3988 5100 50  0001 C CNN
 F 3 "" H 3950 5250 50  0001 C CNN
 	1    3950 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 4950 4250 4950
+	3800 4950 3950 4950
 Wire Wire Line
 	3950 4950 3950 5100
 Wire Wire Line
-	2400 4950 3000 4950
+	2400 4950 2900 4950
 Wire Wire Line
-	2900 4700 2900 5100
+	2900 4700 2900 4950
 $Comp
-L GND #PWR011
+L power1:GND #PWR011
 U 1 1 5AA54D31
 P 3400 5600
 F 0 "#PWR011" H 3400 5350 50  0001 C CNN
@@ -601,14 +570,14 @@ $EndComp
 Wire Wire Line
 	2900 5400 2900 5500
 Wire Wire Line
-	2650 5500 3950 5500
+	2650 5500 2900 5500
 Wire Wire Line
 	3950 5500 3950 5400
 Wire Wire Line
-	3400 5250 3400 5600
+	3400 5250 3400 5500
 Connection ~ 3400 5500
 $Comp
-L +12V #PWR012
+L power1:+12V #PWR012
 U 1 1 5AA54FCB
 P 2900 4700
 F 0 "#PWR012" H 2900 4550 50  0001 C CNN
@@ -622,28 +591,28 @@ Connection ~ 2900 4950
 Connection ~ 4250 6050
 Connection ~ 3950 4950
 $Comp
-L D_Schottky D3
+L flightctrl-rescue:D_Schottky D3
 U 1 1 5AA5521B
 P 4600 6050
 F 0 "D3" H 4600 6150 50  0000 C CNN
 F 1 "BAT20J" H 4600 5950 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-323" H 4600 6050 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4600 6050 50  0001 C CNN
 F 3 "" H 4600 6050 50  0001 C CNN
 	1    4600 6050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5050 5950 5050 6450
+	5050 5950 5050 6050
 Wire Wire Line
 	4750 6050 5050 6050
 Connection ~ 5050 6050
 $Comp
-L BARREL_JACK J8
+L flightctrl-rescue:BARREL_JACK J8
 U 1 1 5AA55B04
 P 2100 5050
 F 0 "J8" H 2100 5245 50  0000 C CNN
 F 1 "BARREL_JACK" H 2100 4895 50  0000 C CNN
-F 2 "Connect:BARREL_JACK" H 2100 5050 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2100 5050 50  0001 C CNN
 F 3 "" H 2100 5050 50  0001 C CNN
 	1    2100 5050
 	1    0    0    -1  
@@ -651,9 +620,69 @@ $EndComp
 Wire Wire Line
 	2400 5050 2650 5050
 Wire Wire Line
-	2650 5050 2650 5500
+	2650 5050 2650 5150
 Connection ~ 2900 5500
 Wire Wire Line
 	2400 5150 2650 5150
 Connection ~ 2650 5150
+Wire Wire Line
+	6000 4750 6000 4850
+Wire Wire Line
+	4800 2550 5300 2550
+Wire Wire Line
+	4600 2550 4800 2550
+Wire Wire Line
+	6000 2650 6000 2850
+Wire Wire Line
+	5300 2550 6000 2550
+Wire Wire Line
+	4400 2850 4600 2850
+Wire Wire Line
+	5750 3950 5750 4000
+Wire Wire Line
+	1600 7300 1600 7350
+Wire Wire Line
+	9100 3350 9100 3500
+Wire Wire Line
+	8550 3150 8650 3150
+Wire Wire Line
+	8550 3350 8650 3350
+Wire Wire Line
+	1850 6200 1850 6450
+Wire Wire Line
+	1750 6750 2000 6750
+Wire Wire Line
+	1750 6750 1750 6900
+Wire Wire Line
+	1600 6650 2000 6650
+Wire Wire Line
+	1750 7300 2300 7300
+Wire Wire Line
+	5750 4750 5750 5050
+Wire Wire Line
+	8750 4000 9250 4000
+Wire Wire Line
+	5750 3900 5750 3950
+Wire Wire Line
+	5750 4000 5750 4750
+Wire Wire Line
+	3400 5500 3950 5500
+Wire Wire Line
+	3400 5500 3400 5600
+Wire Wire Line
+	2900 4950 3000 4950
+Wire Wire Line
+	2900 4950 2900 5100
+Wire Wire Line
+	4250 6050 4250 6150
+Wire Wire Line
+	4250 6050 4450 6050
+Wire Wire Line
+	3950 4950 4250 4950
+Wire Wire Line
+	5050 6050 5050 6450
+Wire Wire Line
+	2900 5500 3400 5500
+Wire Wire Line
+	2650 5150 2650 5500
 $EndSCHEMATC

@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:flightctrl-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:switches
+EESchema Schematic File Version 4
 LIBS:flightctrl-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,62 +15,62 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L C C6
+L flightctrl-rescue:C C6
 U 1 1 5A9B3D1A
 P 4450 4850
 F 0 "C6" H 4475 4950 50  0000 L CNN
 F 1 "100n" H 4475 4750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 4488 4700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 4700 50  0001 C CNN
 F 3 "" H 4450 4850 50  0000 C CNN
 	1    4450 4850
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C7
+L flightctrl-rescue:C C7
 U 1 1 5A9B3D21
 P 4800 5800
 F 0 "C7" H 4825 5900 50  0000 L CNN
 F 1 "100n" H 4825 5700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 4838 5650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4838 5650 50  0001 C CNN
 F 3 "" H 4800 5800 50  0000 C CNN
 	1    4800 5800
 	0    1    1    0   
 $EndComp
 $Comp
-L R R8
+L flightctrl-rescue:R R8
 U 1 1 5A9B3D28
 P 5400 5800
 F 0 "R8" V 5480 5800 50  0000 C CNN
 F 1 "10k" V 5400 5800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5330 5800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5330 5800 50  0001 C CNN
 F 3 "" H 5400 5800 50  0000 C CNN
 	1    5400 5800
 	0    1    1    0   
 $EndComp
 $Comp
-L R R9
+L flightctrl-rescue:R R9
 U 1 1 5A9B3D2F
 P 5450 4700
 F 0 "R9" V 5530 4700 50  0000 C CNN
 F 1 "10k" V 5450 4700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5380 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5380 4700 50  0001 C CNN
 F 3 "" H 5450 4700 50  0000 C CNN
 	1    5450 4700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4450 4700 5300 4700
+	4450 4700 4700 4700
 Connection ~ 4450 5250
 Connection ~ 5100 5800
 Wire Wire Line
 	5700 5800 5550 5800
 Wire Wire Line
-	5700 4650 5700 5800
+	5700 4650 5700 4700
 Wire Wire Line
 	5700 4700 5600 4700
 Connection ~ 4700 4700
 $Comp
-L GND #PWR013
+L power1:GND #PWR013
 U 1 1 5A9B3D3D
 P 4450 5900
 F 0 "#PWR013" H 4450 5650 50  0001 C CNN
@@ -114,10 +83,10 @@ $EndComp
 Wire Wire Line
 	4450 5800 4650 5800
 Wire Wire Line
-	4950 5800 5250 5800
+	4950 5800 5100 5800
 Connection ~ 4450 5800
 $Comp
-L +5V #PWR014
+L power1:+5V #PWR014
 U 1 1 5A9B3D46
 P 5700 4650
 F 0 "#PWR014" H 5700 4500 50  0001 C CNN
@@ -129,68 +98,68 @@ F 3 "" H 5700 4650 50  0000 C CNN
 $EndComp
 Connection ~ 5700 4700
 Wire Wire Line
-	4450 5000 4450 5900
+	4450 5000 4450 5250
 Text GLabel 4700 4700 1    60   Input ~ 0
 SW7_A
 Text GLabel 5100 5800 3    60   Input ~ 0
 SW7_B
 $Comp
-L C C8
+L flightctrl-rescue:C C8
 U 1 1 5A9B3D50
 P 6050 4850
 F 0 "C8" H 6075 4950 50  0000 L CNN
 F 1 "100n" H 6075 4750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 6088 4700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6088 4700 50  0001 C CNN
 F 3 "" H 6050 4850 50  0000 C CNN
 	1    6050 4850
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C9
+L flightctrl-rescue:C C9
 U 1 1 5A9B3D57
 P 6400 5800
 F 0 "C9" H 6425 5900 50  0000 L CNN
 F 1 "100n" H 6425 5700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 6438 5650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6438 5650 50  0001 C CNN
 F 3 "" H 6400 5800 50  0000 C CNN
 	1    6400 5800
 	0    1    1    0   
 $EndComp
 $Comp
-L R R14
+L flightctrl-rescue:R R14
 U 1 1 5A9B3D5E
 P 7000 5800
 F 0 "R14" V 7080 5800 50  0000 C CNN
 F 1 "10k" V 7000 5800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6930 5800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6930 5800 50  0001 C CNN
 F 3 "" H 7000 5800 50  0000 C CNN
 	1    7000 5800
 	0    1    1    0   
 $EndComp
 $Comp
-L R R15
+L flightctrl-rescue:R R15
 U 1 1 5A9B3D65
 P 7050 4700
 F 0 "R15" V 7130 4700 50  0000 C CNN
 F 1 "10k" V 7050 4700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6980 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 4700 50  0001 C CNN
 F 3 "" H 7050 4700 50  0000 C CNN
 	1    7050 4700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6050 4700 6900 4700
+	6050 4700 6350 4700
 Connection ~ 6050 5250
 Connection ~ 6700 5800
 Wire Wire Line
 	7300 5800 7150 5800
 Wire Wire Line
-	7300 4650 7300 5800
+	7300 4650 7300 4700
 Wire Wire Line
 	7300 4700 7200 4700
 Connection ~ 6350 4700
 $Comp
-L GND #PWR015
+L power1:GND #PWR015
 U 1 1 5A9B3D73
 P 6050 5900
 F 0 "#PWR015" H 6050 5650 50  0001 C CNN
@@ -201,12 +170,12 @@ F 3 "" H 6050 5900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 5800 6250 5800
+	5850 5800 6050 5800
 Wire Wire Line
-	6550 5800 6850 5800
+	6550 5800 6700 5800
 Connection ~ 6050 5800
 $Comp
-L +5V #PWR016
+L power1:+5V #PWR016
 U 1 1 5A9B3D7C
 P 7300 4650
 F 0 "#PWR016" H 7300 4500 50  0001 C CNN
@@ -218,22 +187,22 @@ F 3 "" H 7300 4650 50  0000 C CNN
 $EndComp
 Connection ~ 7300 4700
 Wire Wire Line
-	6050 5000 6050 5900
+	6050 5000 6050 5250
 Text GLabel 6350 4700 1    60   Input ~ 0
 SW8_A
 $Comp
-L R R6
+L flightctrl-rescue:R R6
 U 1 1 5A9B3D85
 P 4750 2750
 F 0 "R6" V 4830 2750 50  0000 C CNN
 F 1 "10k" V 4750 2750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4680 2750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4680 2750 50  0001 C CNN
 F 3 "" H 4750 2750 50  0000 C CNN
 	1    4750 2750
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR017
+L power1:+5V #PWR017
 U 1 1 5A9B3D8C
 P 4750 2550
 F 0 "#PWR017" H 4750 2400 50  0001 C CNN
@@ -244,7 +213,7 @@ F 3 "" H 4750 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L power1:GND #PWR018
 U 1 1 5A9B3D92
 P 5800 3000
 F 0 "#PWR018" H 5800 2750 50  0001 C CNN
@@ -257,7 +226,7 @@ $EndComp
 Text GLabel 4700 2950 0    60   Input ~ 0
 SW3
 Wire Wire Line
-	4700 2950 5050 2950
+	4700 2950 4750 2950
 Wire Wire Line
 	4750 2950 4750 2900
 Connection ~ 4750 2950
@@ -266,18 +235,18 @@ Wire Wire Line
 Wire Wire Line
 	4750 2550 4750 2600
 $Comp
-L R R12
+L flightctrl-rescue:R R12
 U 1 1 5A9B3D9E
 P 6300 2750
 F 0 "R12" V 6380 2750 50  0000 C CNN
 F 1 "10k" V 6300 2750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6230 2750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6230 2750 50  0001 C CNN
 F 3 "" H 6300 2750 50  0000 C CNN
 	1    6300 2750
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR019
+L power1:+5V #PWR019
 U 1 1 5A9B3DA5
 P 6300 2550
 F 0 "#PWR019" H 6300 2400 50  0001 C CNN
@@ -288,7 +257,7 @@ F 3 "" H 6300 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L power1:GND #PWR020
 U 1 1 5A9B3DAB
 P 7350 3000
 F 0 "#PWR020" H 7350 2750 50  0001 C CNN
@@ -301,7 +270,7 @@ $EndComp
 Text GLabel 6250 2950 0    60   Input ~ 0
 SW4
 Wire Wire Line
-	6250 2950 6650 2950
+	6250 2950 6300 2950
 Wire Wire Line
 	6300 2950 6300 2900
 Connection ~ 6300 2950
@@ -310,18 +279,18 @@ Wire Wire Line
 Wire Wire Line
 	6300 2550 6300 2600
 $Comp
-L R R5
+L flightctrl-rescue:R R5
 U 1 1 5A9B3DB7
 P 4750 1850
 F 0 "R5" V 4830 1850 50  0000 C CNN
 F 1 "10k" V 4750 1850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4680 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4680 1850 50  0001 C CNN
 F 3 "" H 4750 1850 50  0000 C CNN
 	1    4750 1850
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR021
+L power1:+5V #PWR021
 U 1 1 5A9B3DBE
 P 4750 1650
 F 0 "#PWR021" H 4750 1500 50  0001 C CNN
@@ -332,7 +301,7 @@ F 3 "" H 4750 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L power1:GND #PWR022
 U 1 1 5A9B3DC4
 P 5800 2100
 F 0 "#PWR022" H 5800 1850 50  0001 C CNN
@@ -345,7 +314,7 @@ $EndComp
 Text GLabel 4700 2050 0    60   Input ~ 0
 SW1
 Wire Wire Line
-	4700 2050 5100 2050
+	4700 2050 4750 2050
 Wire Wire Line
 	4750 2050 4750 2000
 Connection ~ 4750 2050
@@ -354,18 +323,18 @@ Wire Wire Line
 Wire Wire Line
 	4750 1650 4750 1700
 $Comp
-L R R11
+L flightctrl-rescue:R R11
 U 1 1 5A9B3DD0
 P 6300 1850
 F 0 "R11" V 6380 1850 50  0000 C CNN
 F 1 "10k" V 6300 1850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6230 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6230 1850 50  0001 C CNN
 F 3 "" H 6300 1850 50  0000 C CNN
 	1    6300 1850
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR023
+L power1:+5V #PWR023
 U 1 1 5A9B3DD7
 P 6300 1650
 F 0 "#PWR023" H 6300 1500 50  0001 C CNN
@@ -376,7 +345,7 @@ F 3 "" H 6300 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR024
+L power1:GND #PWR024
 U 1 1 5A9B3DDD
 P 7350 2100
 F 0 "#PWR024" H 7350 1850 50  0001 C CNN
@@ -389,7 +358,7 @@ $EndComp
 Text GLabel 6250 2050 0    60   Input ~ 0
 SW2
 Wire Wire Line
-	6250 2050 6650 2050
+	6250 2050 6300 2050
 Wire Wire Line
 	6300 2050 6300 2000
 Connection ~ 6300 2050
@@ -397,28 +366,6 @@ Wire Wire Line
 	7350 2050 7350 2100
 Wire Wire Line
 	6300 1650 6300 1700
-$Comp
-L Rotary_Encoder_Switch SW5
-U 1 1 5A9B3DE9
-P 6700 5250
-F 0 "SW5" H 6700 5510 50  0000 C CNN
-F 1 "ROTARY_ENCODER_SWITCH" H 6700 4990 50  0000 C CNN
-F 2 "Button_Switch_THT:PEC11R-4xxxF-Sxxx" H 6600 5410 50  0001 C CNN
-F 3 "" H 6700 5510 50  0001 C CNN
-	1    6700 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Rotary_Encoder_Switch SW1
-U 1 1 5A9B3DF0
-P 5050 5250
-F 0 "SW1" H 5050 5510 50  0000 C CNN
-F 1 "ROTARY_ENCODER_SWITCH" H 5050 4990 50  0000 C CNN
-F 2 "Button_Switch_THT:PEC11R-4xxxF-Sxxx" H 4950 5410 50  0001 C CNN
-F 3 "" H 5050 5510 50  0001 C CNN
-	1    5050 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 4700 4700 5150
 Wire Wire Line
@@ -448,10 +395,10 @@ Wire Wire Line
 Wire Wire Line
 	6700 5650 6700 5800
 $Comp
-L SW_SPST SW2
+L flightctrl-rescue:SW_SPST SW3
 U 1 1 5A9B3E05
 P 5250 2950
-F 0 "SW2" H 5250 3075 50  0000 C CNN
+F 0 "SW3" H 5250 3075 50  0000 C CNN
 F 1 "SW_SPST" H 5250 2850 50  0000 C CNN
 F 2 "Button_Switch_THT:MKIP1PUM" H 5250 2950 50  0001 C CNN
 F 3 "" H 5250 2950 50  0001 C CNN
@@ -459,10 +406,10 @@ F 3 "" H 5250 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPST SW7
+L flightctrl-rescue:SW_SPST SW4
 U 1 1 5A9B3E0C
 P 6850 2950
-F 0 "SW7" H 6850 3075 50  0000 C CNN
+F 0 "SW4" H 6850 3075 50  0000 C CNN
 F 1 "SW_SPST" H 6850 2850 50  0000 C CNN
 F 2 "Button_Switch_THT:MKIP1PUM" H 6850 2950 50  0001 C CNN
 F 3 "" H 6850 2950 50  0001 C CNN
@@ -470,10 +417,10 @@ F 3 "" H 6850 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPST SW3
+L flightctrl-rescue:SW_SPST SW1
 U 1 1 5A9B3E13
 P 5300 2050
-F 0 "SW3" H 5300 2175 50  0000 C CNN
+F 0 "SW1" H 5300 2175 50  0000 C CNN
 F 1 "SW_SPST" H 5300 1950 50  0000 C CNN
 F 2 "Button_Switch_THT:MKIP1PUM" H 5300 2050 50  0001 C CNN
 F 3 "" H 5300 2050 50  0001 C CNN
@@ -481,10 +428,10 @@ F 3 "" H 5300 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPST SW6
+L flightctrl-rescue:SW_SPST SW2
 U 1 1 5A9B3E1A
 P 6850 2050
-F 0 "SW6" H 6850 2175 50  0000 C CNN
+F 0 "SW2" H 6850 2175 50  0000 C CNN
 F 1 "SW_SPST" H 6850 1950 50  0000 C CNN
 F 2 "Button_Switch_THT:MKIP1PUM" H 6850 2050 50  0001 C CNN
 F 3 "" H 6850 2050 50  0001 C CNN
@@ -502,18 +449,18 @@ Wire Wire Line
 Text GLabel 6700 5800 3    60   Input ~ 0
 SW8_B
 $Comp
-L R R13
+L flightctrl-rescue:R R13
 U 1 1 5A9B3E26
 P 6300 3650
 F 0 "R13" V 6380 3650 50  0000 C CNN
 F 1 "10k" V 6300 3650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6230 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6230 3650 50  0001 C CNN
 F 3 "" H 6300 3650 50  0000 C CNN
 	1    6300 3650
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR025
+L power1:+5V #PWR025
 U 1 1 5A9B3E2D
 P 6300 3450
 F 0 "#PWR025" H 6300 3300 50  0001 C CNN
@@ -524,7 +471,7 @@ F 3 "" H 6300 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR026
+L power1:GND #PWR026
 U 1 1 5A9B3E33
 P 7350 3900
 F 0 "#PWR026" H 7350 3650 50  0001 C CNN
@@ -537,7 +484,7 @@ $EndComp
 Text GLabel 6250 3850 0    60   Input ~ 0
 SW6
 Wire Wire Line
-	6250 3850 6650 3850
+	6250 3850 6300 3850
 Wire Wire Line
 	6300 3850 6300 3800
 Connection ~ 6300 3850
@@ -546,10 +493,10 @@ Wire Wire Line
 Wire Wire Line
 	6300 3450 6300 3500
 $Comp
-L SW_SPST SW8
+L flightctrl-rescue:SW_SPST SW6
 U 1 1 5A9B3E3F
 P 6850 3850
-F 0 "SW8" H 6850 3975 50  0000 C CNN
+F 0 "SW6" H 6850 3975 50  0000 C CNN
 F 1 "SW_SPST" H 6850 3750 50  0000 C CNN
 F 2 "Button_Switch_THT:MKIP1PUM" H 6850 3850 50  0001 C CNN
 F 3 "" H 6850 3850 50  0001 C CNN
@@ -559,18 +506,18 @@ $EndComp
 Wire Wire Line
 	7050 3850 7350 3850
 $Comp
-L R R7
+L flightctrl-rescue:R R7
 U 1 1 5A9B3E47
 P 4750 3650
 F 0 "R7" V 4830 3650 50  0000 C CNN
 F 1 "10k" V 4750 3650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4680 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4680 3650 50  0001 C CNN
 F 3 "" H 4750 3650 50  0000 C CNN
 	1    4750 3650
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR027
+L power1:+5V #PWR027
 U 1 1 5A9B3E4E
 P 4750 3450
 F 0 "#PWR027" H 4750 3300 50  0001 C CNN
@@ -581,7 +528,7 @@ F 3 "" H 4750 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR028
+L power1:GND #PWR028
 U 1 1 5A9B3E54
 P 5800 3900
 F 0 "#PWR028" H 5800 3650 50  0001 C CNN
@@ -594,7 +541,7 @@ $EndComp
 Text GLabel 4700 3850 0    60   Input ~ 0
 SW5
 Wire Wire Line
-	4700 3850 5100 3850
+	4700 3850 4750 3850
 Wire Wire Line
 	4750 3850 4750 3800
 Connection ~ 4750 3850
@@ -603,10 +550,10 @@ Wire Wire Line
 Wire Wire Line
 	4750 3450 4750 3500
 $Comp
-L SW_SPST SW4
+L flightctrl-rescue:SW_SPST SW5
 U 1 1 5A9B3E60
 P 5300 3850
-F 0 "SW4" H 5300 3975 50  0000 C CNN
+F 0 "SW5" H 5300 3975 50  0000 C CNN
 F 1 "SW_SPST" H 5300 3750 50  0000 C CNN
 F 2 "Button_Switch_THT:MKIP1PUM" H 5300 3850 50  0001 C CNN
 F 3 "" H 5300 3850 50  0001 C CNN
@@ -616,18 +563,18 @@ $EndComp
 Wire Wire Line
 	5500 3850 5800 3850
 $Comp
-L R R16
+L flightctrl-rescue:R R16
 U 1 1 5A9B8D75
 P 7550 5650
 F 0 "R16" V 7630 5650 50  0000 C CNN
 F 1 "10k" V 7550 5650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7480 5650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7480 5650 50  0001 C CNN
 F 3 "" H 7550 5650 50  0001 C CNN
 	1    7550 5650
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR029
+L power1:GND #PWR029
 U 1 1 5A9B8E39
 P 7550 5900
 F 0 "#PWR029" H 7550 5650 50  0001 C CNN
@@ -638,12 +585,12 @@ F 3 "" H 7550 5900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L flightctrl-rescue:R R10
 U 1 1 5A9B8E89
 P 5850 5650
 F 0 "R10" V 5930 5650 50  0000 C CNN
 F 1 "10k" V 5850 5650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 5780 5650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5780 5650 50  0001 C CNN
 F 3 "" H 5850 5650 50  0001 C CNN
 	1    5850 5650
 	1    0    0    -1  
@@ -668,4 +615,64 @@ Text GLabel 7550 5350 1    60   Input ~ 0
 SW8_C
 Text GLabel 5850 5350 1    60   Input ~ 0
 SW7_C
+$Comp
+L Device:Rotary_Encoder_Switch SW7
+U 1 1 5B646043
+P 5050 5250
+F 0 "SW7" H 5050 5617 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 5050 5526 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm" H 4900 5410 50  0001 C CNN
+F 3 "~" H 5050 5510 50  0001 C CNN
+	1    5050 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW8
+U 1 1 5B64620B
+P 6700 5250
+F 0 "SW8" H 6700 5617 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 6700 5526 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm" H 6550 5410 50  0001 C CNN
+F 3 "~" H 6700 5510 50  0001 C CNN
+	1    6700 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5250 4450 5800
+Wire Wire Line
+	5100 5800 5250 5800
+Wire Wire Line
+	4700 4700 5300 4700
+Wire Wire Line
+	4450 5800 4450 5900
+Wire Wire Line
+	5700 4700 5700 5150
+Wire Wire Line
+	6050 5250 6050 5800
+Wire Wire Line
+	6700 5800 6850 5800
+Wire Wire Line
+	6350 4700 6900 4700
+Wire Wire Line
+	6050 5800 6250 5800
+Wire Wire Line
+	6050 5800 6050 5900
+Wire Wire Line
+	7300 4700 7300 5150
+Wire Wire Line
+	4750 2950 5050 2950
+Wire Wire Line
+	6300 2950 6650 2950
+Wire Wire Line
+	4750 2050 5100 2050
+Wire Wire Line
+	6300 2050 6650 2050
+Wire Wire Line
+	6300 3850 6650 3850
+Wire Wire Line
+	4750 3850 5100 3850
+Wire Wire Line
+	5700 5150 5700 5800
+Wire Wire Line
+	7300 5150 7300 5800
 $EndSCHEMATC
